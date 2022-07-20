@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Cinzel:wght@500 & display=swap');
+
+:root {
+    --cor0: #9ac8eb;
+    --cor1: #6d8da5;
+    --cor2: #3675a5;
+    --cor3: #195a8c;
+    --cor4: #0e426a;
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-topo: 'Cinzel', serifa;
+}    
+
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+
+body {
+    
+    font-family: var(--font-padrao);
+    padding: 4px;
+    
+    
+    
+    
+}
+
+header {
+    width: auto;
+    padding: 50px;
+    text-align: center;
+    font-family: var(--font-topo);
+    background-image: url('../imagem/topo.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+header h1 {
+    color: white;
+    font-size: 6em;
+    font-weight: bolder;
+    
+    
+    
+}
+
+header  h2 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    color: var(--cor0);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    
+
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: 800;
+    font-size: 32px;
+    font-family: var(--font-topo);
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav > ul > li {
+    text-align: center;
+    width: 100%;
+
+}
+
+nav > ul > li > a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    
+}
+
+
+
+main {
+    
+    background-color: white;
+    padding-bottom: 60px;
+    margin-bottom: 5pt;
+    margin-top: 20pt;
+
+}
+
+
+
+
+
+.containerproje{
+    position: relative;
+}
+
+.containerproje .slide-container .slide {
+    margin: auto;
+    max-width: 78vw;
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+}
+
+.containerproje .slide-container .slide .contentproje {
+    flex: 1 1 350px;
+
+}
+
+.containerproje .slide-container .slide .contentproje h2 {
+    font-size: 40px;
+    color: var(--cor4);
+    font-family: var(--font-topo);
+    text-align: center;
+}
+
+.containerproje .slide-container .slide .contentproje p {
+    text-align: center;
+    font-size: 25px;
+    color: var(--cor2);
+    font-family: var(--font-topo);
+  
+
+}
+
+.containerproje .slide-container {
+    display: none;
+}
+
+.containerproje .slide-container.active {
+    display: block;
+}
+
+.containerproje .slide-container:nth-child(1) .slide {
+    background: url('../imagem/radio1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje .slide-container:nth-child(2) .slide {
+    background: url('../imagem/radio2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.containerproje .slide-container:nth-child(3) .slide {
+    background: url('../imagem/radio3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje .slide-container:nth-child(4) .slide {
+    background: url('../imagem/radio4.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje .slide-container:nth-child(5) .slide {
+    background: url('../imagem/radio5.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje .slide-container:nth-child(6) .slide {
+    background: url('../imagem/radio6.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}    
+
+.containerproje .slide-container:nth-child(7) .slide {
+    background: url('../imagem/radio7.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+
+footer {
+    width: auto;
+    text-align: center;
+    margin: auto;
+    background-image: url('../imagem/rodape.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120px;
+    font-family: var(--font-topo);
+    
+}
+
+footer > h2, h3 {
+    color: white;
+}
+
+footer > p {
+    color: var(--cor0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
