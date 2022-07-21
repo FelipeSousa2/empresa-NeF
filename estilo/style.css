@@ -57,47 +57,59 @@ header  h2 {
 }
 
 nav {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor4));
+    justify-content: space-between;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    
+    padding: 1rem;
+    height: 70px;
 
-    
-
-}
-
-nav > a {
-    text-decoration: none;
-    color: var(--cor0);
-    font-weight: 800;
-    font-size: 32px;
-    font-family: var(--font-topo);
 }
 
 nav > ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    width: 100%;
+   margin: 0px;
+   padding: 0px;
+   
 }
 
-nav > ul > li {
-    text-align: center;
-    width: 100%;
-
-}
-
-nav > ul > li > a {
-    display: inline-block;
-    padding: 10px 0;
-    width: 100%;
+a {
+    color: black;
     text-decoration: none;
-    
+    font-family: var(--font-topo);
 }
 
+a:hover {
+    background: var(--cor2);
+}
 
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+    
+    #nav.active #menu {
+        display: flex;
+    }
+}
 
 main {
     
@@ -138,6 +150,7 @@ main {
     color: var(--cor4);
     font-family: var(--font-topo);
     text-align: center;
+    
 }
 
 .containerproje .slide-container .slide .contentproje p {
@@ -145,6 +158,7 @@ main {
     font-size: 25px;
     color: var(--cor2);
     font-family: var(--font-topo);
+    
   
 
 }
@@ -158,7 +172,7 @@ main {
 }
 
 .containerproje .slide-container:nth-child(1) .slide {
-    background: url('../imagem/radio1.jpeg');
+    background: url('../imagem/car.01.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -166,7 +180,7 @@ main {
 }
 
 .containerproje .slide-container:nth-child(2) .slide {
-    background: url('../imagem/radio2.jpeg');
+    background: url('../imagem/car.02.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -175,7 +189,7 @@ main {
 }
 
 .containerproje .slide-container:nth-child(3) .slide {
-    background: url('../imagem/radio3.jpeg');
+    background: url('../imagem/car.03.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -183,7 +197,7 @@ main {
 }
 
 .containerproje .slide-container:nth-child(4) .slide {
-    background: url('../imagem/radio4.jpeg');
+    background: url('../imagem/car.04.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -191,7 +205,7 @@ main {
 }
 
 .containerproje .slide-container:nth-child(5) .slide {
-    background: url('../imagem/radio5.jpeg');
+    background: url('../imagem/car.05.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -199,7 +213,7 @@ main {
 }
 
 .containerproje .slide-container:nth-child(6) .slide {
-    background: url('../imagem/radio6.jpeg');
+    background: url('../imagem/car.06.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -207,7 +221,7 @@ main {
 }    
 
 .containerproje .slide-container:nth-child(7) .slide {
-    background: url('../imagem/radio7.jpeg');
+    background: url('../imagem/car.07.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;

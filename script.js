@@ -14,3 +14,12 @@ function prev() {
 }
 
 setInterval(next, 7000);
+
+const btnMobile = document.getElementById('btn-monile');
+
+function taggleMenu() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active')
+}
+
+btnMobile.addEventListener('click', toggleMenu);
